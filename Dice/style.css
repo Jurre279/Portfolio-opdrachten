@@ -1,0 +1,115 @@
+.centerdice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .geschiedenis{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    height: 300px;
+  }
+  .gemiddled{
+    position: absolute;
+    left: 0px;
+    bottom: 100px;
+    width: 100px;
+    height: 300px;
+  }
+  .aantal{
+      position: absolute;
+      left: 0px;
+      top: 50px;
+      width: 100px;
+      height: 300px;
+  }
+  .dice {
+    position: relative;
+    width: 200px;
+    height: 200px;
+  }
+  .side {
+    width: 100%;
+    height: 100%;
+    background-color:whitesmoke;
+    border: 2px solid black;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .side:before {
+      content: '';
+      width: 20%;
+      height: 20%;
+      background: black;
+      border-radius: 50%;
+  }
+    .two:before {
+      background: transparent;
+      box-shadow: #000 -50px -50px 0px 0px, #000 50px 50px 0px 0px;
+  }
+  .three:before {
+      box-shadow: #000 -50px 50px 0px 0px, #000 50px -50px 0px 0px;
+  }
+  .four:before {
+      background: transparent;
+      box-shadow: #000 -50px 50px 0px 0px, #000 -50px -50px 0px 0px,
+        #000 50px 50px 0px 0px, #000 50px -50px 0px 0px;
+  }
+  .five:before {
+    box-shadow: #000 -50px -50px 0px 0px, #000 -50px 50px 0px 0px,
+      #000 50px -50px 0px 0px, #000 50px 50px 0px 0px;
+  }
+  .six:before {
+    background: transparent;
+    box-shadow: #000 -50px -50px 0px 0px, #000 -50px 0px 0px 0px,
+      #000 -50px 50px 0px 0px, #000 50px -50px 0px 0px, #000 50px 0px 0px 0px, #000
+        50px 50px 0px 0px;
+  }
+  .dice {
+    transform-style: preserve-3d;
+    transform: rotateY(185deg) rotateX(150deg) rotateZ(315deg);
+  }
+  .one {
+    transform: translateZ(100px);
+  }
+  .two {
+    transform: translateX(-100px) rotateY(-90deg);
+  }
+  .three {
+    transform: translateY(100px) rotateX(90deg);
+  }
+  .four {
+    transform: translateY(-100px) rotateX(90deg);
+  }
+  .five {
+    transform: translateX(100px) rotateY(90deg);
+  }
+  .six {
+    transform: translateZ(-100px);
+  }
+  @keyframes rotate {
+    from {
+      transform: rotateY(0) rotateX(45deg) rotateZ(45deg);
+    }
+    to {
+      transform: rotateY(360deg) rotateX(45deg) rotateZ(45deg);
+    }
+  }
+  
+  .basicturn {
+    animation: rotate 1s linear infinite;
+  }
+
+  .speed {
+    animation: rotate 0.1s linear infinite;
+  }
+  .answer {
+    background-color: red;
+  }
+  .pointerevent{
+    pointer-events: none;
+  }

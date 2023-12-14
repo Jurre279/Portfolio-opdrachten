@@ -1,0 +1,20 @@
+{
+  "name": "dice",
+  "version": "1.0.0",
+  "description": "Dit is een school project.\r In dit project moeten wij een dobbelsteen maken met javascript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jurre279/Dice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jurre279/Dice/issues"
+  },
+  "homepage": "https://github.com/Jurre279/Dice#readme"
+}
